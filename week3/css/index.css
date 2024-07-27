@@ -1,0 +1,164 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(circle, #B8C4C2, #e0e0e0);
+    background-position: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.js, .html5, .sass, .css p {
+    text-align: center;
+}
+
+.react, .figma, .bootstrap, .git p {
+    text-align: center;
+}
+
+.text-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.design-grid, .development-grid, .maintenance-grid {
+    flex: 1 1 48%; 
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+  
+}
+.design-grid{
+    background-image: url(../img/pen.svg);
+    background-repeat: no-repeat;
+    background-position: 40%;
+}
+.development-grid{
+    background-image: url(../img/tool.svg);
+    background-repeat: no-repeat;
+    background-position: 30%;
+}
+
+.maintenance-grid{
+    background-image: url(../img/cog.svg);
+    background-repeat: no-repeat;
+    background-position:40%; 
+}
+
+.maintenance-grid {
+    flex: 1 1 40%; 
+}
+.maintenance-grid p{
+    width: 420px;
+    margin: auto;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.skills-svg {
+    width: 100%;
+    max-width: 300px; 
+    height: 50vh; 
+}
+
+.skills-svg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
+    margin: 0 auto;
+}
+
+.skills-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 8px solid black;
+}
+
+.skills-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.imgs-a, .imgs-b {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.imgs-a > div, .imgs-b > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+
+.imgs-a img, .imgs-b img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+
+.header-title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    
+    .design-grid, .development-grid {
+        flex: 1 1 100%;
+    }
+
+    .imgs-a, .imgs-b {
+        flex-direction: column;
+    }
+    .development-grid{
+        background-image: url(../img/tool.svg);
+        background-repeat: no-repeat;
+       background-position: 20px;
+    }
+    .maintenance-grid{
+        background-image: url(../img/cog.svg);
+        background-repeat: no-repeat;
+        background-position:20px; 
+    }
+    .design-grid{
+        background-image: url(../img/pen.svg);
+        background-repeat: no-repeat;
+        background-position: 20px;
+    }
+    .skills-svg{
+         height: 30vh; 
+    }
+}
+
