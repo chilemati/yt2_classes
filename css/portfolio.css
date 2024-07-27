@@ -1,0 +1,71 @@
+/* default setting */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1920px;
+  font-size: 1rem;
+}
+
+/* section 1 */
+.section1 {
+  max-width: 1920px;
+  min-height: 100vh;
+  background-color: #d7d7d7;
+  background-image: url("../images/Rectangle\ 67.png");
+  background-repeat: no-repeat;
+  background-size: 65vw 100%;
+  background-position: bottom right;
+  padding-top: 72px;
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+
+/* nav section */
+.section1 nav {
+    margin-bottom: 34px;
+}
+.section1 ol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 8px;
+}
+
+.section1 .links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.section1 .links a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.28px;
+  text-align: center;
+  color: white;
+  min-width: 8vw;
+  text-decoration: none;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px;
+}
+
+.section1 .links .contact {
+  background-color: white;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.72px;
+  text-align: center;
+  border: 4px solid #FFFFFF;
+  border-radius: 30px;
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 1rem;
+}
+.responsive1 {
+    border: 2px solid purple;
+    padding: 10px 0px;
+    font-size: 1.5em;
+    max-width: 1920px;
+}
+.responsive1 .box{
+    width: 100%;
+    /* width: 98vw; */
+    min-height: 40vh;
+    border: 2px solid red;
+    font-size: 2em;
+}
+.responsive1 .rem{
+    font-size: 1.5rem;
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* flexible image */
+
+.flexible{
+    max-width: 1920px;
+    margin: 2rem 0rem;
+    border: 2px solid darkblue;
+}
+
+.flexible img{
+    width: 100%;
+    height: inherit;
+}
+
+/* inline to block */
+
+.color1{
+    border: 2px solid green;
+}
+
+.color1 span{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: block;
+}
+/* block to inline */
+/* color2 desktop */
+.color2{
+    border: 2px solid purple;
+    text-align: center;
+    max-width: 843px;
+    margin: auto;
+}
+
+.color2 p{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    /* margin-right: 5px; */
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+}
+/* color2 mobile */
+
+@media screen and (max-width:832px) {
+    .color2 p{
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+
+/* 
+  max-width code execution order
+
+  > desktop: 1000px;
+  > tablet: 600px;
+  > mobile: 400px;
+
+  min-width code execution order
+
+  > mobile: 400px;
+  > tablet: 600px;
+  > desktop: 1000px;
+*/
+
+/* responsiveness with max-width */
+
+
+
+/* desktop view */
+
+/* @media screen and (max-width: 1920px) { */
+    /* css rule */
+
+    body{
+        color: green;
+    }
+/* } */
+/* mobile */
+@media screen and (max-width: 600px) {
+    /* css rule */
+
+    body{
+        color: blue;
+    }
+}
+
+/* responsiveness with min-width */
+
+/* mobile */
+@media screen and (min-width: 400px) {
+    .color2 p{
+        color: red;
+    }
+}
+/* desktop */
+@media screen and (min-width: 600px) {
+    .color2 p{
+        /* color: purple; */
+        color: unset;
+    }
+}
